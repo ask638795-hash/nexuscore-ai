@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusCore | Careers - Join the future of AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+    <div class="site-wrapper">
+        <nav class="glass-nav"><div class="container nav-container"><div class="logo">NEXUSCORE</div><ul class="nav-menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="careers.html" class="active">Careers</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div></nav>
+        <main>
+            <section class="page-header"><div class="container"><h1>Build the <span class="gradient-text">Future</span></h1><p>Remote-first, infinite learning, radical impact</p></div></section>
+            <section class="section reveal"><div class="container"><div class="culture-benefits"><div class="glass-card"><i class="fas fa-globe"></i><h3>Remote Work Culture</h3><p>Work from anywhere, home office stipend + annual retreats.</p></div><div class="glass-card"><i class="fas fa-heart"></i><h3>Comprehensive Benefits</h3><p>Equity package, health coverage, wellness days, 4-day work week option.</p></div></div></div></section>
+            <section class="section"><div class="container"><h2>Open <span class="gradient-text">Positions</span></h2><div class="jobs-list"><div class="job-card glass-card"><h3>Senior AI Engineer</h3><p>LLMs, PyTorch, distributed systems. Remote | Full-time</p><a href="#" class="btn-outline small" onclick="alert('Application opened!')">Apply now →</a></div><div class="job-card glass-card"><h3>Cloud Architect (AWS/Azure)</h3><p>Design resilience at scale. US/EU remote</p><a href="#" class="btn-outline small" onclick="alert('Application form coming')">Apply now →</a></div><div class="job-card glass-card"><h3>DevOps Lead</h3><p>K8s, GitOps, ArgoCD. Full remote</p><a href="#" class="btn-outline small">Apply now →</a></div></div></div></section>
+            <section class="section reveal"><div class="container glass-card"><h2>Application Form</h2><form id="careerForm"><input type="text" placeholder="Full Name" required><input type="email" placeholder="Email" required><select><option>Select Position</option><option>AI Engineer</option><option>Cloud Architect</option></select><input type="file" accept=".pdf"><button class="btn btn-primary">Submit Application</button></form><p class="form-note">We value diverse minds — join the core.</p></div></section>
+        </main>
+        <footer class="footer"><div class="container"><div class="footer-bottom">© 2025 NexusCore — Infinite Horizons</div></div></footer>
+        <script>document.getElementById('careerForm')?.addEventListener('submit', (e) => { e.preventDefault(); alert('Application received! Our team will reach out.'); });</script>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
