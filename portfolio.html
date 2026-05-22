@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusCore | Portfolio - AI & Cloud Case Studies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+    <div class="site-wrapper">
+        <nav class="glass-nav"><div class="container nav-container"><div class="logo"><i class="fas fa-brain"></i><span>NEXUS<span class="logo-accent">CORE</span></span></div><div class="nav-toggle"><i class="fas fa-bars"></i></div><ul class="nav-menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html" class="active">Portfolio</a></li><li><a href="careers.html">Careers</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div></nav>
+        <main>
+            <section class="page-header"><div class="container"><h1>Success <span class="gradient-text">Blueprints</span></h1><p>Real-world transformations & measurable ROI</p></div></section>
+            <section class="section"><div class="container"><div class="filter-buttons"><button class="filter-btn active" data-filter="all">All</button><button class="filter-btn" data-filter="ai">AI</button><button class="filter-btn" data-filter="cloud">Cloud</button><button class="filter-btn" data-filter="cyber">Cybersecurity</button></div><div class="portfolio-grid" id="portfolioGrid">
+                <div class="portfolio-card glass-card" data-category="ai"><i class="fas fa-brain"></i><h3>Predictive Maintenance AI</h3><p>Reduced downtime by 63% for heavy machinery leader.</p><div class="stats-badge">Before: 320h downtime → After: 118h</div></div>
+                <div class="portfolio-card glass-card" data-category="cloud"><i class="fas fa-cloud"></i><h3>Global Bank Cloud Native</h3><p>Migration to multi-cloud: 99.999% availability, 31% cost reduction.</p><div class="stats-badge">Latency -58% | TCO -$5.2M</div></div>
+                <div class="portfolio-card glass-card" data-category="cyber"><i class="fas fa-lock"></i><h3>Zero-Trust for Fintech</h3><p>Threat detection time from 12hrs → 4 minutes real-time.</p><div class="stats-badge">Phishing resistance +94%</div></div>
+                <div class="portfolio-card glass-card" data-category="ai"><i class="fas fa-chart-line"></i><h3>AI Sales Copilot</h3><p>Increased conversion by 47% with generative AI assistance.</p><div class="stats-badge">Revenue impact +$22M</div></div>
+            </div></div></section>
+            <section class="section reveal"><div class="container"><div class="metrics-comparison glass-card"><h3>Before / After Performance <span class="gradient-text">Metrics</span></h3><div class="metrics-flex"><div><strong>Avg. Response Time</strong><div>Before: 1.8s → After: 0.4s</div></div><div><strong>Security Incidents</strong><div>Before: 45/month → After: 2/month</div></div><div><strong>Cloud Costs</strong><div>Before: $210k → After: $118k</div></div></div></div></div></section>
+        </main>
+        <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand">NexusCore</div></div><div class="footer-bottom">© 2025 — measurable excellence.</div></div></footer>
+    </div>
+    <script>
+        // filtering logic
+        const btns = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.portfolio-card');
+        btns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+                btns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                cards.forEach(card => {
+                    if(filter === 'all' || card.dataset.category === filter) card.style.display = 'flex';
+                    else card.style.display = 'none';
+                });
+            });
+        });
+    </script>
+    <script src="scripts.js"></script>
+</body>
+                                                                                                                                      </html>
