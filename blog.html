@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusCore | Blog - AI, Cloud & Engineering Insights</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+    <div class="site-wrapper">
+        <nav class="glass-nav"><div class="container nav-container"><div class="logo">NEXUS<span>CORE</span></div><ul class="nav-menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="careers.html">Careers</a></li><li><a href="blog.html" class="active">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div></nav>
+        <main>
+            <section class="page-header"><div class="container"><h1>Tech <span class="gradient-text">Chronicles</span></h1><div class="search-bar"><i class="fas fa-search"></i><input type="text" id="blogSearch" placeholder="Search insights..."></div><div class="categories"><span class="cat active">All</span><span class="cat">AI</span><span class="cat">Cloud</span><span class="cat">Security</span></div></div></section>
+            <section class="section"><div class="container"><div class="featured-article glass-card"><i class="fas fa-crown"></i><h2>Featured: Agentic AI for Enterprise</h2><p>Autonomous workflows & next-gen reasoning — A deep dive into multi-agent architectures.</p><a href="#">Read featured →</a></div><div class="blog-grid" id="blogGrid"><div class="blog-post-card glass-card"><h3>Quantum-safe Cryptography</h3><p>How to future-proof your data against quantum threats.</p><span class="date">March 2025</span></div><div class="blog-post-card glass-card"><h3>Fine-tuning LLMs on custom data</h3><p>Step-by-step techniques for domain-specific models.</p><span class="date">Feb 2025</span></div><div class="blog-post-card glass-card"><h3>FinOps & Cloud Sustainability</h3><p>Green cloud computing + cost optimization strategies.</p><span class="date">Jan 2025</span></div></div></div></section>
+        </main>
+        <footer class="footer"><div class="container"><div class="footer-bottom">© 2025 NexusCore — Knowledge Edge.</div></div></footer>
+        <script>document.getElementById('blogSearch')?.addEventListener('input', (e) => { let val = e.target.value.toLowerCase(); document.querySelectorAll('.blog-post-card').forEach(card => { if(card.innerText.toLowerCase().includes(val)) card.style.display='flex'; else card.style.display='none'; }); });</script>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
